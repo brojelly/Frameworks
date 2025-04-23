@@ -1,0 +1,55 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo API 홈</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #333;
+    }
+    .info {
+      margin-top: 1rem;
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+    .buttons {
+      margin-top: 2rem;
+    }
+    a.button {
+      display: inline-block;
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #4caf50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    a.button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Todo 프로젝트</h1>
+  <div class="info">
+    <p>🚀 이 API는 <strong>유저 등록</strong>, <strong>로그인</strong>, <strong>할 일 관리</strong> 기능을 제공합니다.</p>
+    <p>🧪 API 문서는 <code>/openapi.json</code> 또는 <code>/docs</code>에서 확인할 수 있어요.</p>
+    <p>🔐 JWT 토큰 발급을 통해 인증 후 할 일 기능 사용 가능!</p>
+  </div>
+
+  <div class="buttons">
+    <a href="/register" class="button">회원가입</a>
+    <a href="/login" class="button">로그인</a>
+    <a href="/todos" class="button">할 일 관리</a>
+  </div>
+</body>
+</html>
